@@ -31,7 +31,7 @@ app.get("/todos", async (req, res) => {
   }
 });
 
-// POST → Add a new todo
+
 app.post("/todos", async (req, res) => {
   try {
     const { task } = req.body;
@@ -43,7 +43,7 @@ app.post("/todos", async (req, res) => {
   }
 });
 
-// PUT → Update a todo
+
 app.put("/todos/:id", async (req, res) => {
   try {
     const { task } = req.body;
@@ -63,7 +63,6 @@ app.put("/todos/:id", async (req, res) => {
   }
 });
 
-// DELETE → Delete a todo
 app.delete("/todos/:id", async (req, res) => {
   try {
     const deletedTodo = await Todo.findByIdAndDelete(req.params.id);
@@ -78,9 +77,7 @@ app.delete("/todos/:id", async (req, res) => {
   }
 });
 
-// ====================
-// 4. Start Server
-// ====================
+
 app.listen(3000, () =>
   console.log("🚀 Server running at http://localhost:3000/todos")
 );
