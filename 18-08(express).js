@@ -36,4 +36,4 @@ app.delete("/todos/:id", (req, res) => {
   } else res.status(404).json({ message: "Todo not found" });
 });
 
-app.listen(3000, () => console.log("Express server running at http://localhost:3000/todos"));
+app.listen(2000, () => console.log("Express server running at http://localhost:2000/todos"));
