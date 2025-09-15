@@ -13,6 +13,6 @@ http.createServer((req, res) => {
             res.end();
         }
     });
-}).listen(5000);
+}).listen(6000);
 
-console.log("Server running at http://localhost:5000");
+console.log("Server running at http://localhost:6000");

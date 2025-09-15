@@ -1,8 +1,8 @@
-// exports.details = details;
+
 const details = {
     name: 'Bhoomika',
     age: 20,
-    course:'b,tech',
+    course:'b.tech',
     Specialisation:'Fullstack'
 }
 
